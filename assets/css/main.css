@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    background-color: chocolate;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    height:10px;
+}
+
+svg{
+    fill:white;
+}
+
+main, nav, footer a{
+    color:antiquewhite;
+}
+
+main{
+    text-align: center;
+}
+
+h1#main_title{
+    font-size: 64px;
+}
+
+h1{
+    font-family: serif;
+}
+
+p{
+    font-size:20px;
+}
+
+button{
+    background: #555;
+    color:white;
+    font-size: 20px;
+}
+
+footer{
+    background:linear-gradient(white,chocolate);
+}
