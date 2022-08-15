@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box; /* spca thing */
+}
+
 body{
     margin:0;
     background-color: chocolate;
@@ -6,6 +10,7 @@ body{
 
 ul{
     list-style: none;
+    padding: 0;
 }
 
 header{
@@ -18,6 +23,7 @@ svg{
 
 main, nav, footer a{
     color:antiquewhite;
+    padding:0 272px;
 }
 
 main{
