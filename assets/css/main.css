@@ -1,12 +1,39 @@
-body{
+body, button{
     background-color: black;
     color: white;
+    margin: 0;
 }
 
-.aotea{
-    width: 100px;
+.green{
+    background-color: #001800;
+}
+
+.gridding{
+    display:grid;
+}
+
+header, .intro button{
+    border: 1px solid white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 5fr 3fr 1fr 1fr;
+}
+
+.subheadings{
+    grid-template-columns: 1fr 1fr;
+}
+
+.intro {
+    grid-template-columns: 1fr 4fr;
+    border: 1px solid white;
+}
+
+.contents{
+    
 }
 
 video{
-    width: 500px;
+    width:100%;
 }
