@@ -1,7 +1,16 @@
+/* Global / Referenced throughout*/
 body, button{
     color: white;
     margin: 0;
     background: transparent;
+}
+
+.flex{
+    display: flex;
+}
+
+.gridding{
+    display:grid;
 }
 
 .black{
@@ -12,9 +21,7 @@ body, button{
     background-color: #001800;
 }
 
-.gridding{
-    display:grid;
-}
+/*Header*/
 
 header, .intro button{
     border: 1px solid white;
@@ -28,7 +35,7 @@ nav{
 
 .subheadings{
     grid-template-columns: 1fr 1fr;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     padding-right:300px;
     padding-left:300px;
     padding-top: 25px;
@@ -61,7 +68,26 @@ video, img{
     font-size: 20px;
 }
 
-.info img{
-    width: 45%;
+.center {
+    justify-content: center;
 }
 
+.center-text{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.center img{
+    width: auto;
+}
+
+
+.flex-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    flex-basis: 50%;
+}
+
+.flex-container img{
+    width: 20%;
+}
