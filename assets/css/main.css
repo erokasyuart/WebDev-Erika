@@ -131,6 +131,10 @@ video{
     width: 160px;
 }
 
+.journal{
+    padding: 10% 28%;
+}
+
 .articles{
     /*flex-wrap: wrap;
     justify-content: center;
@@ -140,7 +144,14 @@ video{
 }
 
 .articles img{
-    width: 20%;
+
+    object-fit: cover;
+}
+
+.article-child{
+    column-gap: 2%;
+    height:320px;
+    width:100%;
 }
 
 .location{
@@ -165,10 +176,7 @@ video{
 
 footer{
     border-top: 1px solid white;
-    padding-top: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 5%;
+    padding: 5% 10%;
     justify-content: center;
     column-gap: 8%;
 }
