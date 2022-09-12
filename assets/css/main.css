@@ -3,6 +3,19 @@ body, button{
     color: white;
     margin: 0;
     background: transparent;
+    background:black;
+}
+
+a{
+    color: white;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
 }
 
 .flex{
@@ -11,10 +24,6 @@ body, button{
 
 .gridding{
     display:grid;
-}
-
-.black{
-    background-color: black;
 }
 
 .green{
@@ -35,7 +44,6 @@ nav{
 
 .subheadings{
     grid-template-columns: 1fr 1fr;
-    /*border: 2px solid red;*/
     border-top: 1px solid white;
     padding: 5% 15%;
 }
@@ -98,24 +106,75 @@ video{
 
 .center {
     justify-content: center;
+    flex-direction: column;
+    padding:0% 25%;
 }
 
 .center-text{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 5fr 1fr;
 }
 
-.center img{
-    width: auto;
+.center-text .harvest{
+    padding: 0% 10%;
+}
+
+.center-text svg{
+    color:white;
 }
 
 
-.flex-container{
-    flex-wrap: wrap;
+.articles{
+    /*flex-wrap: wrap;
     justify-content: center;
-    padding: 5%;
-    flex-basis: 50%;
+    /*padding-left: 15%;
+    padding-right: 15%;
+    flex-basis: 50%;*/
 }
 
-.flex-container img{
+.articles img{
     width: 20%;
 }
+
+.location{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.store-text :nth-child(1n+1){
+    padding-bottom: 5%;
+}
+
+.store-text h3:nth-of-type(2){
+    border-bottom: 1px solid white;
+}
+
+.location li{
+    padding-bottom: 5%;
+}
+
+footer{
+    border-top: 1px solid white;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    justify-content: center;
+    column-gap: 8%;
+}
+
+.email {
+    border-bottom: 1px solid white;
+    margin-bottom:3%;
+}
+
+.email input{
+    background: none;
+    border: none;
+    color:darkgrey;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
