@@ -122,6 +122,14 @@ video{
     color:white;
 }
 
+.sponsors-icons ul{
+    justify-content: center;
+    column-gap: 5%;
+}
+
+.sponsors-icons ul li img {
+    width: 160px;
+}
 
 .articles{
     /*flex-wrap: wrap;
