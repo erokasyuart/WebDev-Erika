@@ -6,6 +6,11 @@ body, button{
     background:black;
 }
 
+svg{
+    fill: white;
+    padding: 25px;
+}
+
 a{
     color: white;
 }
@@ -108,6 +113,7 @@ video{
     justify-content: center;
     flex-direction: column;
     padding:0% 25%;
+    padding-bottom: 5%;
 }
 
 .center-text{
@@ -118,8 +124,8 @@ video{
     padding: 0% 10%;
 }
 
-.center-text svg{
-    color:white;
+.sponsors-icons{
+    padding: 5%;
 }
 
 .sponsors-icons ul{
@@ -132,7 +138,11 @@ video{
 }
 
 .journal{
-    padding: 10% 28%;
+    padding: 5% 26%;
+}
+
+.journal-blurb{
+    padding: 10% 0;
 }
 
 .articles{
@@ -144,7 +154,8 @@ video{
 }
 
 .articles img{
-
+    height: 320px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -152,6 +163,7 @@ video{
     column-gap: 2%;
     height:320px;
     width:100%;
+    padding: 5% 0;
 }
 
 .location{
@@ -194,3 +206,6 @@ footer{
     width: 100%;
 }
 
+input:focus{
+    border:none
+}
