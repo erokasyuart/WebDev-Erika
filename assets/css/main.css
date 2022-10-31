@@ -37,14 +37,12 @@ li{
 
 /*Header*/
 
-header{
-
-}
 
 nav{
     display: grid;
     grid-template-columns: 5fr 3fr 1fr 1fr;
     padding: 25px;
+    border: 1px solid white;
 }
 
 .subheadings{
@@ -208,4 +206,10 @@ footer{
 
 input:focus{
     border:none
+}
+
+/*shop.html*/
+.filters ul{
+    overflow: hidden;
+    list-style-type: none;
 }
