@@ -209,7 +209,21 @@ input:focus{
 }
 
 /*shop.html*/
-.filters ul{
-    overflow: hidden;
-    list-style-type: none;
+.title{
+    border: 1px solid white;
+}
+
+.filters{
+    padding: 0% 15%;
+}
+.filters ul li{
+    width: 100%;
+}
+
+.products ul{
+    margin: 0%;
+}
+.products ul li{
+     border: 1px solid white;
+     width: 100%;
 }
