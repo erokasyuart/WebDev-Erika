@@ -1,9 +1,13 @@
 /* Global / Referenced throughout*/
-body, button{
+body{
     color: white;
     margin: 0;
     background: transparent;
     background:black;
+}
+
+button{
+    background-color: transparent;
 }
 
 svg{
@@ -11,7 +15,7 @@ svg{
     padding: 25px;
 }
 
-a{
+a, h2{
     color: white;
 }
 
@@ -37,6 +41,9 @@ li{
 
 /*Header*/
 
+.shipping{
+    padding-left: 250px;
+}
 
 nav{
     display: grid;
@@ -63,6 +70,16 @@ nav{
         grid-template-columns: 1fr;
     }
 }
+
+.slide-up {
+    animation: slideUp ease 1s forwards .1s;
+
+}
+
+@keyframes slideUp {
+    0% {transform: translateY(100px);}
+    100% {transform: translateY(0);opacity:1;}
+  }
 
 .intro .contents button{
     text-align: left;
