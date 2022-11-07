@@ -7,7 +7,8 @@ body{
 }
 
 button{
-    background-color: transparent;
+    background-color: black;
+    color: white;
 }
 
 svg{
@@ -15,7 +16,7 @@ svg{
     padding: 25px;
 }
 
-a, h2{
+a, h1, h2, h3, p{
     color: white;
 }
 
@@ -73,13 +74,13 @@ nav{
 
 .slide-up {
     animation: slideUp ease 1s forwards .1s;
-
 }
 
 @keyframes slideUp {
     0% {transform: translateY(100px);}
     100% {transform: translateY(0);opacity:1;}
   }
+
 
 .intro .contents button{
     text-align: left;
