@@ -1,9 +1,17 @@
+let images = [
+  document.querySelector(".img1"),
+  document.querySelector(".img2")
+];
+
 const BASE_URL = "https://api.unsplash.com";
-let images = fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`);
-images.then(response =>{
+let fetching = fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`);
+fetching.then(response =>{
     return response.json();
 }).then (data =>{
-    console.log(data);
+  console.log(data);
+  for (let i=0; i<images.length;i++){
+    images[i].src = [results][i][links][html]
+  }
 })
 
 /*https://codepen.io/jr-cologne/pen/zdYdmx
