@@ -14,25 +14,33 @@ fetching.then(response =>{
   }
 })
 
-/*https://codepen.io/jr-cologne/pen/zdYdmx
-let text = document.getElementsByClassName('slide-up')
-let elementHeight = text.clientHeight;
-document.addEventListener('scroll', animate);
+function isInViewport(item) {
 
-function inView(){
-  let height = window.innerHeight; //window height
-  let scrollY = window.scrollY || window.pageYOffset; //counts pixels that have been scrolled
-  let scrollPos = scrollY + height;
-  let elementPos = text.getBoundingClientRect().top + scrollY + elementHeight;
-  if (scrollPosition > elementPosition) {
-    return true;
-  }
-  return false;
-}
+  var bounding = item.getBoundingClientRect(),
+      myElementHeight = item.offsetHeight,
+      myElementWidth = item.offsetWidth;
 
-function animate(){
-  if (inView()){
-    text.classList.add('slide-up');
+  if(bounding.top >= -myElementHeight
+      && bounding.left >= -myElementWidth
+      && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
+      && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
+      return true;
+  } else {
+      return false;
   }
 }
-*/
+
+const monster = document.querySelectorAll(".products");
+console.log('monster', monster);
+/* Window Scrolling */
+for(let i=0; i<monster.length;i++){
+
+window.addEventListener("scroll", function(){
+    if(isInViewport(monster[i])) {
+      console.log("yes");
+      monster[i].classList.add("slide-up"); 
+   }
+
+  })
+};
+
