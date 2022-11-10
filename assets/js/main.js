@@ -15,14 +15,10 @@ fetching.then(response =>{
 })
 
 function isInViewport(item) {
-
-  var bounding = item.getBoundingClientRect(),
-      myElementHeight = item.offsetHeight,
-      myElementWidth = item.offsetWidth;
+  let bounding = item.getBoundingClientRect(),
+      myElementHeight = item.offsetHeight;
 
   if(bounding.top >= -myElementHeight
-      && bounding.left >= -myElementWidth
-      && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + myElementWidth
       && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + myElementHeight) {
       return true;
   } else {
@@ -30,17 +26,15 @@ function isInViewport(item) {
   }
 }
 
-const monster = document.querySelectorAll(".products");
-console.log('monster', monster);
+const movingText = document.querySelectorAll(".products");
+console.log('movingText', movingText);
 /* Window Scrolling */
-for(let i=0; i<monster.length;i++){
 
-window.addEventListener("scroll", function(){
-    if(isInViewport(monster[i])) {
-      console.log("yes");
-      monster[i].classList.add("slide-up"); 
-   }
-
+for(let i=0; i<movingText.length;i++){
+  window.addEventListener("scroll", function(){
+      if(isInViewport(movingText[i])) {
+        movingText[i].classList.add("slide-up"); 
+    }
   })
 };
 
