@@ -26,9 +26,8 @@ function isInViewport(item) {
   }
 }
 
-const movingText = document.querySelectorAll(".products");
+const movingText = document.querySelectorAll(".up");
 console.log('movingText', movingText);
-/* Window Scrolling */
 
 for(let i=0; i<movingText.length;i++){
   window.addEventListener("scroll", function(){
