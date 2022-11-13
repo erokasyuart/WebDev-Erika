@@ -37,13 +37,14 @@ li{
 }
 
 .green{
-    background-color: #001800;
+    background-color: #16211c;
 }
 
 /*Header*/
 
-.shipping{
-    padding-left: 250px;
+.shipping p{
+    padding: 20px 0 20px 250px;
+    margin: 0;
 }
 
 nav{
