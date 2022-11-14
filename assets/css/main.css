@@ -51,13 +51,17 @@ nav{
     display: grid;
     grid-template-columns: 5fr 3fr 1fr 1fr;
     padding: 25px;
-    border: 1px solid white;
+    border-top: 1px solid white;
 }
 
 .subheadings{
     grid-template-columns: 1fr 1fr;
-    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     padding: 5% 15%;
+}
+
+.contents button{
+    margin-left: 25px;
 }
 
 
