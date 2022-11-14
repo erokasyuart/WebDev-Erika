@@ -1,6 +1,14 @@
 let images = [
   document.querySelector(".img1"),
-  document.querySelector(".img2")
+  document.querySelector(".img2"),
+  document.querySelector(".img3"),
+  document.querySelector(".img4"),
+  document.querySelector(".img5"),
+  document.querySelector(".img6"),
+  document.querySelector(".img7"),
+  document.querySelector(".img8"),
+  document.querySelector(".img9"),
+  document.querySelector(".img10")
 ];
 
 const BASE_URL = "https://api.unsplash.com";
