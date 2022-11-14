@@ -4,13 +4,12 @@ let images = [
 ];
 
 const BASE_URL = "https://api.unsplash.com";
-let fetching = fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`);
-fetching.then(response =>{
-    return response.json();
-}).then (data =>{
+fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`)
+.then(response => response.json())
+.then (data =>{
   console.log(data);
-  for (let i=0; i<images.length;i++){
-    images[i].src = [results][i][links][html]
+  for(let i=0;i<images.length;i++){
+    images[i].src = data["results"][i]["urls"]["regular"]
   }
 })
 
