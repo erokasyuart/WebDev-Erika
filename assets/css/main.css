@@ -60,10 +60,10 @@ nav{
     padding: 5% 15%;
 }
 
-.contents button{
-    margin-left: 25px;
+.contents button p{
+    margin:0;
+    padding-left: 50px;
 }
-
 
 .intro {
     grid-template-columns: 1fr 4fr;
@@ -85,8 +85,7 @@ nav{
 @keyframes slideUp {
     0% {transform: translateY(100px);}
     100% {transform: translateY(0);opacity:1;}
-  }
-
+}
 
 .intro .contents button{
     text-align: left;
