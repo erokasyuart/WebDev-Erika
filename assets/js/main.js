@@ -44,3 +44,20 @@ for(let i=0; i<movingText.length;i++){
   })
 };
 
+//shop.html row image generation
+let shopRow;
+let picture;
+let shopBody = document.querySelector(".shop-body");
+for (let row=0; row<3; row++){
+  shopRow = document.createElement("div");
+  shopRow.classList.add("row");
+  shopBody.append(shopRow);
+
+    for (let box=0; box<3; box++){
+      picture = document.createElement("img");
+      picture.src = images[box];
+      shopRow.append(picture);
+    }
+}
+
+
