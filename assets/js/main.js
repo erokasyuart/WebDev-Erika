@@ -18,6 +18,7 @@ fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z
   console.log(data);
   for(let i=0;i<images.length;i++){
     images[i].src = data["results"][i]["urls"]["regular"]
+    picture.src = data["results"][i]["urls"]["regular"]
   }
 })
 
@@ -55,7 +56,7 @@ for (let row=0; row<3; row++){
 
     for (let box=0; box<3; box++){
       picture = document.createElement("img");
-      picture.src = images[box];
+      //picture.src = images[box];
       shopRow.append(picture);
     }
 }
