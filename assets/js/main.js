@@ -22,7 +22,7 @@ fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z
   }
 })
 
-function isInViewport(item) {
+let isInViewport = (item) => {
   let bounding = item.getBoundingClientRect(),
       myElementHeight = item.offsetHeight;
 
