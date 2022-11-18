@@ -37,21 +37,17 @@ let isInViewport = (item) => {
   }
   
   //for text that slides up animation
-  const movingText = document.querySelectorAll(".up");
-  console.log('movingText', movingText);
-  
-  for(let i=0; i<movingText.length;i++){
-    window.addEventListener("scroll", function(){
-      if(isInViewport(movingText[i])) {
-        movingText[i].classList.add("slide-up"); 
+  const movingText = document.querySelectorAll(".up");  //selects all instances where there is a class ".up" attached
+  for(let i=0; i<movingText.length;i++){ //goes through the array these elements are stored in
+    window.addEventListener("scroll", function(){ //uses the window size checking
+      if(isInViewport(movingText[i])) { //if the element is in view
+        movingText[i].classList.add("slide-up");  //add the class name that triggers the animation found in the css
       }
     })
   };
   
   //For shipping animation from left to right
-  const movingRight = document.querySelectorAll(".right-animation");
-  console.log('movingRight', movingRight);
-  
+  const movingRight = document.querySelectorAll(".right-animation");  
   for(let i=0; i<movingRight.length;i++){
     window.addEventListener("scroll", function(){
       if(isInViewport(movingRight[i])) {
