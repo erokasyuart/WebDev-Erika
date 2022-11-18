@@ -84,9 +84,15 @@ nav{
     100% {transform: translateY(0);opacity:1;}
   }
 
-
 .intro .contents button{
+    padding: 20px 10px 20px 10px;
     text-align: left;
+}
+
+.intro .contents button i{
+    text-align: right;
+    width: 100%;
+    /*justify-content: center;*/
 }
 
 .intro button{
