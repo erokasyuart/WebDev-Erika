@@ -8,9 +8,7 @@ let images = [
   document.querySelector(".img7"),
   document.querySelector(".img8"),
   document.querySelector(".img9"),
-  document.querySelector(".img10"),
-  document.querySelector(".img11"),
-  document.querySelector(".img12")
+  document.querySelector(".img10")
 ];
 
 //API
