@@ -8,7 +8,6 @@ body{
 }
 
 button{
-    background-color: black;
     color: white;
 }
 
@@ -55,6 +54,10 @@ nav{
     border: 1px solid white;
 }
 
+nav button{
+    background-color: black;
+}
+
 .subheadings{
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid white;
@@ -87,12 +90,12 @@ nav{
 .intro .contents button{
     padding: 20px 10px 20px 10px;
     text-align: left;
+    background-color: black;
 }
 
 .intro .contents button i{
     text-align: right;
     width: 100%;
-    /*justify-content: center;*/
 }
 
 .intro button{
@@ -113,8 +116,9 @@ nav{
     padding-right: 5%;
 }
 
-.product-preview .products{
-    padding: 8% 0 8%;
+.products{
+    padding: 50px 0 50px 0;
+    border: none;
 }
 
 .product-preview img{
@@ -122,6 +126,10 @@ nav{
     height: 100%;
 }
 
+.products i{
+    text-align: right;
+    width: 100%;
+}
 
 video{
     width:100%;
@@ -170,13 +178,6 @@ video{
     padding: 10% 0;
 }
 
-.articles{
-    /*flex-wrap: wrap;
-    justify-content: center;
-    /*padding-left: 15%;
-    padding-right: 15%;
-    flex-basis: 50%;*/
-}
 
 .articles img{
     height: 320px;
