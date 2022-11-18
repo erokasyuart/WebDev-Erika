@@ -72,15 +72,50 @@ let isInViewport = (item) => {
 const radioButtons = document.querySelectorAll('input');
 for (const radioButton of radioButtons){
   radioButton.addEventListener('change',function(e){
-
+    //skincare button
     if (document.getElementById('skincare').checked == true){
-      console.log("skincare button");
       for (let i = 0; i < skincare.length; i++){
-        skincare[i].style.visibility = "hidden";
-
+        all[i].style.visibility = "hidden";
+        skincare[i].style.visibility = "visible";
       }
-  }})
-}
+    }
+    //honey button
+    if (document.getElementById('honey').checked == true){
+      for (let i = 0; i < honey.length; i++){
+        all[i].style.visibility = "hidden";
+        honey[i].style.visibility = "visible";
+      }
+    }
+    //packs button
+    if (document.getElementById('packs').checked == true){
+      for (let i = 0; i < packs.length; i++){
+        all[i].style.visibility = "hidden";
+        packs[i].style.visibility = "visible";
+      }
+    }
+    //kawakawa button
+    if (document.getElementById('kawakawa').checked == true){
+      for (let i = 0; i < kawakawa.length; i++){
+        all[i].style.visibility = "hidden";
+        kawakawa[i].style.visibility = "visible";
+      }
+    }
+    //manuka button
+    if (document.getElementById('manuka').checked == true){
+      for (let i = 0; i < manuka.length; i++){
+        all[i].style.visibility = "hidden";
+        manuka[i].style.visibility = "visible";
+      }
+    }
+    //harakeke button
+    if (document.getElementById('harakeke').checked == true){
+      for (let i = 0; i < harakeke.length; i++){
+        all[i].style.visibility = "hidden";
+        harakeke[i].style.visibility = "visible";
+      }
+    }
+  }
+)}
 
 
             
