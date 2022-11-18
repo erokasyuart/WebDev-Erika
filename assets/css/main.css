@@ -223,12 +223,16 @@ video{
     padding: 10% 0;
 }
 
+.article-child{
+    column-gap: 20px;
+}
+
 .article-child img{
     height: 320px;
     width: 600px;
     object-fit: cover;
     object-position: center;
-
+    padding-bottom: 25px;
 }
 
 .location{
@@ -240,8 +244,8 @@ video{
 }
 
 .location img {
-    width: 100%;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
     object-fit: cover;
 }
 
