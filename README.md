@@ -1,2 +1,6 @@
 # WebDev-Erika
-Web 1 Assignment
+
+Aotea Skincare Website
+======================
+
+This is the recretion of aoteamade.co.nz. 
