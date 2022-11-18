@@ -89,6 +89,22 @@ nav a, .product-preview .products{
     100% {transform: translateY(0);opacity:1;}
 }
 
+/*sliding in from left to right animation*/
+.slide-right {
+    animation: slideRight ease 1s forwards .1s;
+}
+
+@keyframes slideRight {
+    from {
+        margin-left: -100%;
+        opacity: 0;
+      }
+      to {
+        margin-left: 0%;
+        opacity: 1;
+      }
+}
+
 .intro .contents button{
     padding: 20px 10px 20px 10px;
     text-align: left;

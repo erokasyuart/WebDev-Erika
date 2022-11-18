@@ -13,6 +13,7 @@ let images = [
   document.querySelector(".img12")
 ];
 
+//API
 const BASE_URL = "https://api.unsplash.com";
 fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`)
 .then(response => response.json())
@@ -22,6 +23,7 @@ fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z
   }
 })
 
+//checking if the item is in view to trigger animation
 let isInViewport = (item) => {
   let bounding = item.getBoundingClientRect(),
       myElementHeight = item.offsetHeight;
@@ -34,6 +36,7 @@ let isInViewport = (item) => {
   }
 }
 
+//for text that slides up animation
 const movingText = document.querySelectorAll(".up");
 console.log('movingText', movingText);
 
@@ -41,6 +44,18 @@ for(let i=0; i<movingText.length;i++){
   window.addEventListener("scroll", function(){
       if(isInViewport(movingText[i])) {
         movingText[i].classList.add("slide-up"); 
+    }
+  })
+};
+
+//For shipping animation from left to right
+const movingRight = document.querySelectorAll(".right-animation");
+console.log('movingRight', movingRight);
+
+for(let i=0; i<movingRight.length;i++){
+  window.addEventListener("scroll", function(){
+      if(isInViewport(movingRight[i])) {
+        movingRight[i].classList.add("slide-right"); 
     }
   })
 };
