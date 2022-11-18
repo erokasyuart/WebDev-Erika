@@ -18,7 +18,16 @@ This is the recretion of aoteamade.co.nz.
   - This is a feature that has some issues.
 - Asynchronous Programming
   - API fetching uses asynchronous programming.
- 
+- Responsiveness
+
+### Known Bugs and Missing Features
+- Empty Links
+- Missing drop-down menus/pop-up menus
+- Radio buttons do not deselect
+  - If a user selects more than one radio button then more images will be hidden
+- Filtered images are only hidden and are not rearranged
+- Half of index.html and shop.html lack responsiveness
+
 ### Resources
 1. https://www.javascripttutorial.net/javascript-dom/javascript-radio-button/
 2. https://stackoverflow.com/questions/68441473/how-can-i-trigger-this-animation-to-start-once-in-viewport
