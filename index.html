@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="assets/css/main.css"/>
+        <script src="https://kit.fontawesome.com/fd45530f7e.js" crossorigin="anonymous"></script>
     </head>
 
     <header>
@@ -13,10 +14,10 @@
             <p>Free Shipping in New Zealand on orders over $50</p><!--free shipping fades in from left to right-->
         </div>
         <nav>
-            <button>Logo</button>
-            <button>Menu</button>
-            <button>Search</button>
-            <button>Cart</button>
+            <a href=""><img class="aotea-logo" src="https://cdn.shopify.com/s/files/1/0462/5681/6290/files/logo_180x.png?v=1598248951"/></a>
+            <a href=""><i class="fa fa-light fa-bars"></i> Menu</a>
+            <a href=""><i class="fa fa-solid fa-magnifying-glass"></i></a>
+            <a href=""><i class="fa fa-light fa-bag-shopping"></i></a>
         </nav>
 
         <div class ="subheadings gridding">
@@ -30,14 +31,16 @@
         <div class="intro gridding">
             <div class ="contents gridding">
                 <button>
-                    <p>Shop</p>
+                    Shop
                     <i class="fa-solid fa-arrow-right"></i> <!-- needs font awesome's "kits" -->
                 </button>
                 <button>
-                    <p>Journal</p>
+                    Journal
+                    <i class="fa-solid fa-arrow-right"></i>
                 </button>
                 <button>
-                    <p>About</p>
+                    About
+                    <i class="fa-solid fa-arrow-right"></i>
                 </button>
                 <div class ="blank-space span"></div>
             </div>
@@ -47,25 +50,27 @@
         </div>
 
         <div class="product-preview green gridding">
-            <button class="products green ">
-                <h2 class="up">Latest Products</h2> <!--slides up; messenger icon slides up as well-->
-            </button>
-            <button class="products green">
-                <h2 class="up">Shop All</h2>
-            </button>
-
-            <img class="img1" src="https://cdn.shopify.com/s/files/1/0462/5681/6290/files/Grouping_photo_for_website_1296x.jpg?v=1621303700"/>
-            <img class="img2"src="https://cdn.shopify.com/s/files/1/0462/5681/6290/files/Portrait_image_3_540x.jpg?v=1621304792"/>
-            
-            <!--slides up-->
-            <div class="up">
-                <h2>The collection</h2>
-                <p>We have a range of balms, oils, creams & masks for whatever you are after.</p>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Shop full collection</a>
+            <div>
+                <a class="products green" href="">
+                    <h2 class="up align-center">Latest Products <i class="fa-solid fa-arrow-right"></i></h2> <!--slides up; messenger icon slides up as well-->
+                </a>
+                <img class="img1" src="https://cdn.shopify.com/s/files/1/0462/5681/6290/files/Grouping_photo_for_website_1296x.jpg?v=1621303700"/>
+                <div class="right gridding">
+                    <h2 class="up">The collection</h2>
+                    <div class="up">
+                        <p>We have a range of balms, oils, creams & masks for whatever you are after.</p>
+                        <a href="">Shop full collection</a>
+                    </div>
+                </div>
             </div>
-            <div class="up">
-                <p>Shop our most popular products</p>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Shop now</a>
+
+            <div class="prod-column-2">
+                <a class="products green" href="">
+                    <h2 class="up">Shop All</h2>
+                </a>
+                <img class="img2" src="https://cdn.shopify.com/s/files/1/0462/5681/6290/files/Portrait_image_3_540x.jpg?v=1621304792"/>
+                <p class="up spacing">Shop our most popular products</p>
+                <a class="up" href="">Shop now</a>
             </div>
         </div>
 
@@ -73,10 +78,26 @@
 
         <div class="info">
             <div class="quotes gridding">
-                <p>it's wonderful that the production of this soap supports the local community and that the ingredients are native to NZ</p>
-                <p>I love discovering businesses founded by passionate individuals who are dedicated to minimising harm, respecting people and the planets and creating with care. Aotea embodies all of those attributes and entwines them with a sense of community and culture.</p>
-                <p>A wonderful example of a company embracing it's cultural and local community, spreading awareness, goodwill and social responsibility. Love the concept of tikanga maori and educating the consumer about the maori ways.</p>
-                <p>I buy the Aotea range because of their commitment to sustainability. Their facilities on Aotea are powered by a solar farm and I'm excited to see how they turn their business into a complete circular economy</p>
+                <div class="align-center">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>it's wonderful that the production of this soap supports the local community and that the ingredients are native to NZ</p>
+                    <p class="small-font">- Fiona Morouco</p>
+                </div>
+                <div class="align-center">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>I love discovering businesses founded by passionate individuals who are dedicated to minimising harm, respecting people and the planets and creating with care. Aotea embodies all of those attributes and entwines them with a sense of community and culture.</p>
+                    <p class="small-font">- Niccii Kugler</p>
+                </div>
+                <div class="align-center">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>A wonderful example of a company embracing it's cultural and local community, spreading awareness, goodwill and social responsibility. Love the concept of tikanga maori and educating the consumer about the maori ways.</p>
+                    <p class="small-font">- Sigourney Cantelo</p>
+                </div>
+                <div class="align-center">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p>I buy the Aotea range because of their commitment to sustainability. Their facilities on Aotea are powered by a solar farm and I'm excited to see how they turn their business into a complete circular economy</p>
+                    <p class="small-font">- K. Hansen (New Zealand)</p>
+                </div>
             </div>
             
             <!--slides up-->
@@ -114,7 +135,7 @@
             <div class="journal-blurb up">
                 <p>Our Journal (puka rātaka)</p>
                 <h1>We are inspired by mātauranga Māori (Māori knowledge). We write about the science, the flora and important aspects of our culture.</h1>
-                <a href="">read all</a>
+                <a href="">READ ALL</a>
             </div>
             <!---->
 
@@ -123,7 +144,7 @@
                     <img class="img4" src="https://cdn.shopify.com/s/files/1/0462/5681/6290/articles/0M7A0407_2_540x.jpg?v=1650343271"/>
                     <!--slides up-->
                     <div class="article-text up">
-                        <p>Kawakawa</p>
+                        <p><i class="fa-solid fa-circle"></i> Kawakawa</p>
                         <h3>Kawakawa - Everything You Need To Know About This Amazing Native Plant</h3>
                         <p>Kawakawa (macropiper excelsum) is a herbaceous shrub with knobbly joints and branching stems native to New Zealand. It has large heart shaped leaves that are a dark green, and sometimes slightly...</p>
                         <a href="">Read More</a>
@@ -134,7 +155,7 @@
                 <div class="article-child flex">
                     <!--slides up-->
                     <div class="article-text up">
-                        <p>Manuka</p>
+                        <p><i class="fa-solid fa-circle"></i> Manuka</p>
                         <h3>The difference between MGO & UMF Manuka Honey</h3>
                         <p>As one of the lead producers of high-quality Manuka honey, we know that the terms MGO and UMF on jars of Manuka honey puzzle a lot of consumers. In this post, we unveil why they are there wha t...</p>
                         <a href="">Read More</a>
@@ -147,7 +168,7 @@
                     <img class="img6" src="https://cdn.shopify.com/s/files/1/0462/5681/6290/articles/0M7A0709_540x.jpg?v=1601257014"/>
                     <!--slides up-->
                     <div class="article-text up">
-                        <p>Kawakawa</p>
+                        <p><i class="fa-solid fa-circle"></i> Kawakawa</p>
                         <h3>How To Make Kawakawa Oil</h3>
                         <p>Kawakawa oil is a great oil with a lot of benefits, such as healing skin conditions, making digestive process run naturally, and sealing up wounds. Kawakawa oil is found naturally in the leaves of...</p>
                         <a href="">Read More</a>
@@ -162,9 +183,9 @@
             <!--slides up-->
             <div class="store-text up">
                 <h3>Our Concept Store</h3>
-                <h3>Commercial Bay</h3>
+                <h3>Commercial Bay <i class="fa-solid fa-plus"></i></h3>
                 <h2>7/21 Queen Street (Ground Floor) Auckland CBD Auckland 1010</h2>
-                <ul>
+                <ul class="small-font">
                     <li>hello@aotea.co</li>
                     <li>Hours:</li>
                     <li>10am - 7pm (Monday - Saturday)</li>
@@ -178,7 +199,7 @@
         <footer class="flex">
             <div class="ft-summary up">
                 <p>A range of New Zealand made therapeutic products inspired by traditional Māori herbal remedies and supported by scientific research.</p>
-                <img src="https://cdn.shopify.com/s/files/1/0462/5681/6290/files/logo_180x.png?v=1598248951"/>
+                <img class="aotea-logo" src="https://cdn.shopify.com/s/files/1/0462/5681/6290/files/logo_180x.png?v=1598248951"/>
             </div>
 
             <div class="ft-links-1 up">
