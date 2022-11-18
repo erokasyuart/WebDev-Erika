@@ -156,9 +156,13 @@ video{
 
 .quotes{
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 50px 20%;
+    padding: 80px 80px;
     column-gap: 5%;
-    font-size: 20px;
+    font-size: medium;
+}
+
+.small-font{
+    font-size: small;
 }
 
 .center {
@@ -178,6 +182,7 @@ video{
 
 .sponsors-icons{
     padding: 5%;
+    object-position: center;
 }
 
 .sponsors-icons ul{
