@@ -80,7 +80,7 @@ nav a, .product-preview .products{
     border-bottom: 1px solid white;
 }
 
-/* sliding animation */
+/* sliding up animation */
 .slide-up {
     animation: slideUp ease 1s forwards .1s;
 }
@@ -231,6 +231,12 @@ video{
     padding-bottom: 5%;
 }
 
+.location img{
+    width: 1000px;
+    height: 600px;
+    object-fit: cover;
+}
+
 .store-text :nth-child(1n+1){
     padding-bottom: 5%;
 }
@@ -267,6 +273,7 @@ input:focus{
     border:none
 }
 
+/*RESPONSIVENESS*/
 @media (orientation: portrait){
     
     .intro{
