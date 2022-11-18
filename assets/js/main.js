@@ -11,6 +11,8 @@ let images = [
   document.querySelector(".img10")
 ];
 
+let gallery;
+
 const BASE_URL = "https://api.unsplash.com";
 fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`)
 .then(response => response.json())
@@ -18,7 +20,7 @@ fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z
   console.log(data);
   for(let i=0;i<images.length;i++){
     images[i].src = data["results"][i]["urls"]["regular"]
-    picture.src = data["results"][i]["urls"]["regular"]
+
   }
 })
 
@@ -46,6 +48,7 @@ for(let i=0; i<movingText.length;i++){
 };
 
 //shop.html row image generation
+/*
 let shopRow;
 let picture;
 let shopBody = document.querySelector(".shop-body");
@@ -56,9 +59,9 @@ for (let row=0; row<3; row++){
 
     for (let box=0; box<3; box++){
       picture = document.createElement("img");
-      //picture.src = images[box];
+      picture.classList.add(images[box])
       shopRow.append(picture);
     }
-}
+}*/
 
 
