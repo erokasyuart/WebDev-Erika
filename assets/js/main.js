@@ -60,7 +60,7 @@ let isInViewport = (item) => {
     })
   };
   
-  //all the images that have that class
+  //all the images that have that class is selected and stored in their associated variable
   let all = document.querySelectorAll(".all");
   let skincare = document.querySelectorAll(".skincare");
   let honey = document.querySelectorAll(".honey");
@@ -69,11 +69,17 @@ let isInViewport = (item) => {
   let manuka = document.querySelectorAll(".manuka");
   let harakeke = document.querySelectorAll(".harakeke");
 
-const radioButtons = document.querySelectorAll('input');
-for (const radioButton of radioButtons){
-  radioButton.addEventListener('change',function(e){
+const RADIOBUTTONS = document.querySelectorAll('input'); //buttons are stored in a variable
+for (const radioButton of RADIOBUTTONS){ //for loop runs through RADIOBUTTONS
+  radioButton.addEventListener('change',function(e){ //checks to see if a radio button has been selected
+    //all button
+    if (document.getElementById('all').checked == true){ //if a specific button has been checked
+      for (let i = 0; i < honey.length; i++){ //then loop through the variable of all the selected queries
+        all[i].style.visibility = "visible"; //relevent tags get shown and others are hidden
+      }
+    }
     //skincare button
-    if (document.getElementById('skincare').checked == true){
+    else if (document.getElementById('skincare').checked == true){
       for (let i = 0; i < skincare.length; i++){
         all[i].style.visibility = "hidden";
         skincare[i].style.visibility = "visible";
