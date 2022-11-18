@@ -30,7 +30,8 @@ There is one JavaScript file located in WebDev-Erika>assets>js>main.js that is u
 - Empty Links
 - Missing drop-down menus/pop-up menus
 - Radio buttons do not deselect
-  - If a user selects more than one radio button then more images will be hidden
+  - If a user selects more than one radio button then more images will be hidden.
+  - Requires a page refresh.
 - Filtered images are only hidden and are not rearranged
 - Half of index.html and shop.html lack responsiveness
 
