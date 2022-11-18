@@ -76,10 +76,15 @@ for (let i=0; i<images.length; i++){
   harakeke.push(document.querySelectorAll(".harakeke"))
 }
 
+const radioButtons = document.querySelectorAll('input');
+for (const radioButton of radioButtons){
+  radioButton.addEventListener('change',function(e){
+    if (document.getElementById('skincare').checked == true){
+      console.log("skincare button");
+      
+      }
+  });
 
-if(document.querySelector(('input[value="honey"]:checked'))){
-  for (let i=0;i<all.length;i++){
-    all[i].style.visibility = "hidden";
-  }
-}  
+}
+
             
