@@ -12,6 +12,14 @@ let images = [
   document.querySelector(".img10")
 ];
 
+let all = [];
+let skincare =[];
+let honey = [];
+let packs = [];
+let kawakawa = [];
+let manuka = [];
+let harakeke = [];
+
 //API
 const BASE_URL = "https://api.unsplash.com"; //Unsplash website
 fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`)
@@ -59,3 +67,19 @@ for(let i=0; i<movingRight.length;i++){
   })
 };
 
+for (let i=0; i<images.length; i++){
+  all.push(document.querySelectorAll(".all"))
+  honey.push(document.querySelectorAll(".honey"))
+  skincare.push(document.querySelectorAll(".skincare"))
+  packs.push(document.querySelectorAll(".packs"))
+  manuka.push(document.querySelectorAll(".manuka"))
+  harakeke.push(document.querySelectorAll(".harakeke"))
+}
+
+
+if(document.querySelector(('input[value="honey"]:checked'))){
+  for (let i=0;i<all.length;i++){
+    all[i].style.visibility = "hidden";
+  }
+}  
+            

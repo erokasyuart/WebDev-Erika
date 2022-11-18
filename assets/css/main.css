@@ -390,6 +390,14 @@ input:focus{
     height: 500px;
 }
 
+/*Hover effect*/
+.gallery li img:hover{ 
+    background: #16211c;
+    overflow: hidden;
+    object-fit: cover;
+   opacity: 0.4;
+}
+
 .overlay-text{
     position: absolute;
     top: 20px;
