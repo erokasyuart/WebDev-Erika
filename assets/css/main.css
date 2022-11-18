@@ -93,9 +93,10 @@ nav button{
     background-color: black;
 }
 
-.intro .contents button i{
+.intro .contents button i, .products i, .store-text i{
     text-align: right;
     width: 100%;
+    position: inherit;
 }
 
 .intro button{
@@ -126,11 +127,6 @@ nav button{
     height: 100%;
 }
 
-.products i{
-    text-align: right;
-    width: 100%;
-}
-
 video{
     width:100%;
 }
@@ -140,6 +136,10 @@ video{
     padding: 50px 20%;
     column-gap: 5%;
     font-size: 20px;
+}
+
+.quote-box{
+    text-align: center;
 }
 
 .center {
