@@ -1,3 +1,4 @@
+//images array to assign each class with it's own unique image
 let images = [
   document.querySelector(".img1"),
   document.querySelector(".img2"),
@@ -12,7 +13,7 @@ let images = [
 ];
 
 //API
-const BASE_URL = "https://api.unsplash.com";
+const BASE_URL = "https://api.unsplash.com"; //Unsplash website
 fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`)
 .then(response => response.json())
 .then (data =>{
