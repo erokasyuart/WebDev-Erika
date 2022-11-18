@@ -8,10 +8,10 @@ let images = [
   document.querySelector(".img7"),
   document.querySelector(".img8"),
   document.querySelector(".img9"),
-  document.querySelector(".img10")
+  document.querySelector(".img10"),
+  document.querySelector(".img11"),
+  document.querySelector(".img12")
 ];
-
-let gallery;
 
 const BASE_URL = "https://api.unsplash.com";
 fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`)
@@ -20,7 +20,6 @@ fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z
   console.log(data);
   for(let i=0;i<images.length;i++){
     images[i].src = data["results"][i]["urls"]["regular"]
-
   }
 })
 
@@ -46,22 +45,4 @@ for(let i=0; i<movingText.length;i++){
     }
   })
 };
-
-//shop.html row image generation
-/*
-let shopRow;
-let picture;
-let shopBody = document.querySelector(".shop-body");
-for (let row=0; row<3; row++){
-  shopRow = document.createElement("div");
-  shopRow.classList.add("row");
-  shopBody.append(shopRow);
-
-    for (let box=0; box<3; box++){
-      picture = document.createElement("img");
-      picture.classList.add(images[box])
-      shopRow.append(picture);
-    }
-}*/
-
 
