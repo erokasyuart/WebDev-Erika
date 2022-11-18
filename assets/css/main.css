@@ -60,7 +60,7 @@ nav{
     display: grid;
     grid-template-columns: 5fr 3fr 1fr 1fr;
     padding: 25px;
-    border: 1px solid white;
+    border-top: 1px solid white;
 }
 
 nav a, .product-preview .products{
@@ -69,7 +69,7 @@ nav a, .product-preview .products{
 
 .subheadings{
     grid-template-columns: 1fr 1fr;
-    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     padding: 5% 15%;
     position: relative;
 }
@@ -88,7 +88,6 @@ nav a, .product-preview .products{
 @keyframes slideUp {
     0% {transform: translateY(100px);}
     100% {transform: translateY(0);opacity:1;}
-  }
 
 .intro .contents button{
     padding: 20px 10px 20px 10px;
@@ -135,6 +134,7 @@ nav a, .product-preview .products{
 
 .product-preview img{
     width: 100% ;
+
     height: 700px;
     object-fit: cover;
 }
@@ -201,7 +201,7 @@ video{
 }
 
 .journal{
-    padding: 5% 26%;
+    margin: 0 20% 0 20%;
 }
 
 .journal-blurb{
@@ -209,17 +209,11 @@ video{
 }
 
 
-.articles img{
+.article-child img{
     height: 320px;
-    width: 100%;
+    width: 600px;
     object-fit: cover;
-}
-
-.article-child{
-    column-gap: 2%;
-    height:320px;
-    width:100%;
-    padding: 5% 0;
+    object-position: center;
 }
 
 .location{
@@ -240,6 +234,12 @@ video{
 
 .location li{
     padding-bottom: 5%;
+}
+
+.location img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
 footer{
@@ -266,6 +266,7 @@ input:focus{
     border:none
 }
 
+/*SHOP.HTML CSS*/
 @media (orientation: portrait){
     
     .intro{
@@ -340,10 +341,10 @@ input:focus{
     }
 
 }
-
-/*shop.html*/
 .title{
-    border: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 0 20px 200px;
 }
 
 .filters{
@@ -356,7 +357,29 @@ input:focus{
 .products ul{
     margin: 0%;
 }
+
 .products ul li{
      border: 1px solid white;
      width: 100%;
+     position: relative;
+}
+
+li img {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+}
+
+.overlay-price{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: black;
 }

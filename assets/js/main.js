@@ -1,20 +1,29 @@
 let images = [
   document.querySelector(".img1"),
-  document.querySelector(".img2")
+  document.querySelector(".img2"),
+  document.querySelector(".img3"),
+  document.querySelector(".img4"),
+  document.querySelector(".img5"),
+  document.querySelector(".img6"),
+  document.querySelector(".img7"),
+  document.querySelector(".img8"),
+  document.querySelector(".img9"),
+  document.querySelector(".img10"),
+  document.querySelector(".img11"),
+  document.querySelector(".img12")
 ];
 
 const BASE_URL = "https://api.unsplash.com";
-let fetching = fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`);
-fetching.then(response =>{
-    return response.json();
-}).then (data =>{
+fetch (`${BASE_URL}/search/photos/?query="skincare&client_id=56nlzPl65-YaTzlU_1Z-57ZvobZwvOAgPdfPUkCHO7U`)
+.then(response => response.json())
+.then (data =>{
   console.log(data);
-  for (let i=0; i<images.length;i++){
-    images[i].src = [results][i][links][html]
+  for(let i=0;i<images.length;i++){
+    images[i].src = data["results"][i]["urls"]["regular"]
   }
 })
 
-function isInViewport(item) {
+let isInViewport = (item) => {
   let bounding = item.getBoundingClientRect(),
       myElementHeight = item.offsetHeight;
 
